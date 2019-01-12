@@ -15,6 +15,7 @@ Scratch Editor Choice - Choose Your Editor
 startup();
 var editors = [];
 editors.push("3.0");
+if(versionFileExtension!="") {
 if(versionFileExtension!="sb3") {
 editors.push("2.0");
 } 
@@ -23,7 +24,7 @@ editors.push("1.4");
 } 
 for(i in editors) {
 document.getElementsByTagName("UL")[0].innerHTML+="<li>"+editors[i]+"</li>";
-}
+}}
 </script>
 </body>
 </html>
