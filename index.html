@@ -8,6 +8,22 @@ Scratch Editor Choice - Choose Your Editor
 <script src="get.js"></script>
 <script src="download.js"></script>
 <script src="index.js"></script>
-<script></script>
+<ul>
+  
+  </ul>
+<script>
+startup();
+var editors = [];
+editors.push("3.0");
+if(versionFileExtension!="sb3") {
+editors.push("2.0");
+} 
+if(versionFileExtension=="sb") {
+editors.push("1.4");
+} 
+for(i in editors) {
+document.getElementsByTagName("UL")[0].innerHTML+="<li>"+editors[i]+"</li>";
+}
+</script>
 </body>
 </html>
