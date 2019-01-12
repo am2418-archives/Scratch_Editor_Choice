@@ -18,9 +18,10 @@ function getProject(id) {
 }
 
 function getVersion(data) {
-var d = data;
 try {
-d=JSON.parse(d);
+d=JSON.parse(data);
+} catch {
+d=data
 }
 if (typeof(d)=="object") {
 if (targets in d) {
